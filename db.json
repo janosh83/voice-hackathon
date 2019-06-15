@@ -3,288 +3,332 @@
         {
             "name": "Barcelona",
             "code": "BCN",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "low",
             "activities": [
-                "beach",
+                "sunbathing",
                 "partying",
-                "monuments"
+                "sightseeing",
+                "surfing"
             ]
         },
         {
             "name": "Paris",
             "code": "PAR",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "monuments"
+                "sightseeing",
+                "cycling",
+                "golf"
             ]
         },
         {
             "name": "London",
             "code": "LON",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "monuments"
+                "sightseeing",
+                "cycling",
+                "golf"
             ]
         },
         {
             "name": "Los Angeles",
             "code": "LAX",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "high",
             "activities": [
-                "beach",
+                "sunbathing",
                 "partying",
-                "monuments",
-                "nature"
+                "sightseeing",
+                "surfing",
+                "golf"
             ]
         },
         {
             "name": "Miami",
             "code": "MIA",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "high",
             "activities": [
                 "partying",
-                "beach",
-                "nature"
+                "sunbathing",
+                "surfing",
+                "golf"
             ]
         },
         {
             "name": "Toulouse",
             "code": "TLS",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "high",
             "activities": [
                 "partying",
-                "monuments",
-                "nature"
+                "sightseeing",
+                "hiking",
+                "climbing",
+                "camping",
+                "cycling",
+                "skiing",
+                "sunbathing"
             ]
         },
         {
             "name": "Zurich",
             "code": "ZRH",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "nature",
-                "skiing"
+                "hiking",
+                "skiing",
+                "climbing",
+                "golf"
             ]
         },
         {
             "name": "Beijing",
             "code": "BJS",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "high",
             "activities": [
-                "monuments"
+                "sightseeing"
             ]
         },
         {
             "name": "Tokyo",
             "code": "TYO",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "high",
             "activities": [
-                "monuments"
+                "sightseeing",
+                "golf"
             ]
         },
         {
             "name": "Flagstaff",
             "code": "GCN",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "high",
             "activities": [
-                "nature",
-                "skiing"
+                "hiking",
+                "skiing",
+                "climbing",
+                "camping",
+                "sunbathing",
+                "golf"
             ]
         },
         {
             "name": "Aspen",
             "code": "ASE",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "far",
             "price_level": "high",
             "activities": [
-                "nature",
-                "skiing"
+                "hiking",
+                "skiing",
+                "climbing",
+                "golf"
             ]
         },
         {
             "name": "Rio De Janeiro",
             "code": "RIO",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "low",
             "activities": [
                 "partying",
-                "beach"
+                "sunbathing",
+                "surfing"
             ]
         },
         {
-            "name": "Miami",
-            "code": "MIA",
-            "weather_conditions": "warm",
+            "name": "Phuket",
+            "code": "HKT",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "low",
             "activities": [
-                "partying"
+                "partying",
+                "sunbathing",
+                "swiming"
             ]
         },
         {
             "name": "Budapest",
             "code": "BUD",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "low",
             "activities": [
-                "partying"
+                "partying",
+                "cycling",
+                "sightseeing"
             ]
         },
         {
             "name": "Gdansk",
             "code": "GDN",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "low",
             "activities": [
-                "beach",
-                "monuments"
+                "sightseeing",
+                "cycling"
             ]
         },
         {
             "name": "Brussel",
             "code": "BRU",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "partying",
-                "monuments"
+                "cycling",
+                "sightseeing",
+                "golf"
             ]
         },
         {
             "name": "Amsterdam",
             "code": "AMS",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "high",
             "activities": [
                 "partying",
-                "monuments"
+                "sightseeing",
+                "cycling",
+                "golf"
             ]
         },
         {
             "name": "Stockholm",
             "code": "STO",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "monuments",
-                "nature"
+                "sightseeing",
+                "hiking",
+                "camping",
+                "cycling",
+                "skiing"
             ]
         },
         {
             "name": "Helsinki",
             "code": "HEL",
-            "weather_conditions": "cool",
+            "weather_conditions": "cold",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "monuments",
-                "nature"
+                "sightseeing",
+                "hiking",
+                "camping",
+                "cycling",
+                "skiing"
             ]
         },
         {
             "name": "Roma",
             "code": "ROM",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "low",
             "activities": [
                 "partying",
-                "monuments",
-                "beach"
+                "sightseeing",
+                "sunbathing",
+                "swiming"
             ]
         },
         {
             "name": "Marseille",
             "code": "MRS",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "high",
             "activities": [
-                "partying",
-                "monuments"
+                "sightseeing",
+                "climbing",
+                "hiking",
+                "sunbathing"
             ]
         },
         {
             "name": "Athens",
             "code": "ATH",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "low",
             "activities": [
-                "monuments",
-                "beach"
+                "sightseeing",
+                "sunbathing",
+                "partying",
+                "golf"
             ]
         },
         {
             "name": "Tunis",
             "code": "TUN",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "close",
             "price_level": "low",
             "activities": [
-                "partying",
-                "beach",
-                "monuments"
+                "sunbathing",
+                "sightseeing"
             ]
         },
         {
             "name": "Cairo",
             "code": "CAI",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "low",
             "activities": [
                 "partying",
-                "beach"
+                "sunbathing",
+                "sightseeing"
             ]
         },
         {
             "name": "Antalya",
             "code": "AYT",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "low",
             "activities": [
                 "partying",
-                "beach"
+                "sunbathing",
+                "swiming"
             ]
         },
         {
             "name": "Cape Town",
             "code": "CPT",
-            "weather_conditions": "warm",
+            "weather_conditions": "hot",
             "distance": "far",
             "price_level": "low",
             "activities": [
                 "partying",
-                "beach"
+                "sunbathing",
+                "swiming",
+                "surfing",
+                "golf"
             ]
         }
     ]
