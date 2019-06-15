@@ -1,6 +1,6 @@
 "use strict";
 const functions = require("firebase-functions");
-const {dialogflow, Suggestions} = require("actions-on-google");
+const {dialogflow, Suggestions, BasicCard, Button, Image} = require("actions-on-google");
 const admin = require("firebase-admin");
 const app = dialogflow();
 const superagent = require("superagent");
@@ -27,11 +27,35 @@ app.intent('Default Welcome Intent', conv => {
   conv.ask(new Suggestions(['surfing',"beach","party", "golf"]));
  });
 
- app.intent("finallink",
- (conv) => {
-    return conv.ask(`Here is a <a href="${conv.user.storage.deep_link}">link</a>. Click to booking.`);
- }
-);
+// app.intent("finallink",
+// (conv) => {
+//    return conv.ask(`Here is a <a href="${conv.user.storage.deep_link}">link</a>. Click to booking.`);
+
+    // if (!conv.surface.capabilities.has('actions.capability.SCREEN_OUTPUT')) {
+    //   conv.ask('Sorry, try this on a screen device or select the ' +
+    //     'phone surface in the simulator.');
+    //   return;
+    // }
+
+    // conv.ask('This is a basic card example.');
+    // // Create a basic card
+    // conv.ask(new BasicCard({
+    //   text: `This is a basic card.  Text in a basic card can include "quotes" and
+    //   most other unicode characters including emoji 📱.  Basic cards also support
+    //   some markdown formatting like *emphasis* or _italics_, **strong** or
+    //   __bold__, and ***bold itallic*** or ___strong emphasis___ as well as other
+    //   things like line  \nbreaks`, // Note the two spaces before '\n' required for
+    //                               // a line break to be rendered in the card.
+    //   subtitle: 'This is a subtitle',
+    //   title: 'Title: this is a title',
+    //   buttons: new Button({
+    //     title: 'This is a button',
+    //     url: conv.user.storage.deep_link,
+    //   }),
+    // }));
+
+// }
+//);
 
 
 app.intent("activity",
@@ -91,9 +115,31 @@ app.intent("weather", async (conv, {weather_condition}) => {
             const destination = response.body.data[0].cityTo;
             const activity = conv.user.storage.activity;
             conv.user.storage.deep_link = response.body.data[0].deep_link;
+
+            if (!conv.surface.capabilities.has('actions.capability.SCREEN_OUTPUT')) {
+              conv.ask('I am sending you reservation link to your email.');
+              return;
+            }
+
+            conv.ask(`${destination} is great place for ${activity} in ${weather_condition} weather. I found the cheapest flight ticket from ${from} on kiwi.com you will love for just ${price} EUR. Here is the link.`);
+            // Create a basic card
+            conv.ask(new BasicCard({
+              text: `From: __${from}__ To: __${destination}__  \n
+Date: __${response.body.data[0].local_departure.split("T")[0]}__  \n
+Duration: __${response.body.data[0].nightsInDest} nights__  \n
+Price: __${price} EUR__  \n`, // Note the two spaces before '\n' required for
+                                          // a line break to be rendered in the card.
+              // subtitle: `From: ${from} To: ${destination}`,
+              title: 'Your next trip',
+              buttons: new Button({
+                title: 'Go to booking',
+                url: conv.user.storage.deep_link,
+              }),
+            }));
+
             //const weather_condition = conv.user.storage.activity;
-            conv.ask(new Suggestions(['yes','no']));      
-            return conv.ask(`${destination} is great place for ${activity} in ${weather_condition} weather. I found the cheapest flight ticket from ${from} on kiwi.com you will love for just ${price} EUR. Would you like to book this ticket?`);      
+            //conv.ask(new Suggestions(['yes','no']));      
+            //return conv.ask(`${destination} is great place for ${activity} in ${weather_condition} weather. I found the cheapest flight ticket from ${from} on kiwi.com you will love for just ${price} EUR. Would you like to book this ticket?`);      
         });
     }
     else
