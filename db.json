@@ -1,10 +1,4 @@
 {
-    "command": {
-        "from": "Prague",
-        "to": "Barcelona",
-        "departure": "21 Jun 2019",
-        "arrival": "23 Jun 2019"
-    },
     "cities": [
         {
             "name": "Barcelona",
@@ -250,6 +244,7 @@
         },
         {
             "name": "Tunis",
+            "code": "TUN",
             "weather_conditions": "warm",
             "distance": "close",
             "price_level": "low",
@@ -261,26 +256,35 @@
         },
         {
             "name": "Cairo",
+            "code": "CAI",
             "weather_conditions": "warm",
             "distance": "far",
+            "price_level": "low",
             "activities": [
-                "partying"
+                "partying",
+                "beach"
             ]
         },
         {
             "name": "Antalya",
+            "code": "AYT",
             "weather_conditions": "warm",
             "distance": "far",
+            "price_level": "low",
             "activities": [
-                "partying"
+                "partying",
+                "beach"
             ]
         },
         {
             "name": "Cape Town",
+            "code": "CPT",
             "weather_conditions": "warm",
             "distance": "far",
+            "price_level": "low",
             "activities": [
-                "partying"
+                "partying",
+                "beach"
             ]
         }
     ]
