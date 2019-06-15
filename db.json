@@ -1,0 +1,287 @@
+{
+    "command": {
+        "from": "Prague",
+        "to": "Barcelona",
+        "departure": "21 Jun 2019",
+        "arrival": "23 Jun 2019"
+    },
+    "cities": [
+        {
+            "name": "Barcelona",
+            "code": "BCN",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "low",
+            "activities": [
+                "beach",
+                "partying",
+                "monuments"
+            ]
+        },
+        {
+            "name": "Paris",
+            "code": "PAR",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "monuments"
+            ]
+        },
+        {
+            "name": "London",
+            "code": "LON",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "monuments"
+            ]
+        },
+        {
+            "name": "Los Angeles",
+            "code": "LAX",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "high",
+            "activities": [
+                "beach",
+                "partying",
+                "monuments",
+                "nature"
+            ]
+        },
+        {
+            "name": "Miami",
+            "code": "MIA",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "high",
+            "activities": [
+                "partying",
+                "beach",
+                "nature"
+            ]
+        },
+        {
+            "name": "Toulouse",
+            "code": "TLS",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "partying",
+                "monuments",
+                "nature"
+            ]
+        },
+        {
+            "name": "Zurich",
+            "code": "ZRH",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "nature",
+                "skiing"
+            ]
+        },
+        {
+            "name": "Beijing",
+            "code": "BJS",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "high",
+            "activities": [
+                "monuments"
+            ]
+        },
+        {
+            "name": "Tokyo",
+            "code": "TYO",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "high",
+            "activities": [
+                "monuments"
+            ]
+        },
+        {
+            "name": "Flagstaff",
+            "code": "GCN",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "high",
+            "activities": [
+                "nature",
+                "skiing"
+            ]
+        },
+        {
+            "name": "Aspen",
+            "code": "ASE",
+            "weather_conditions": "cool",
+            "distance": "far",
+            "price_level": "high",
+            "activities": [
+                "nature",
+                "skiing"
+            ]
+        },
+        {
+            "name": "Rio De Janeiro",
+            "code": "RIO",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "low",
+            "activities": [
+                "partying",
+                "beach"
+            ]
+        },
+        {
+            "name": "Miami",
+            "code": "MIA",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "price_level": "low",
+            "activities": [
+                "partying"
+            ]
+        },
+        {
+            "name": "Budapest",
+            "code": "BUD",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "low",
+            "activities": [
+                "partying"
+            ]
+        },
+        {
+            "name": "Gdansk",
+            "code": "GDN",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "low",
+            "activities": [
+                "beach",
+                "monuments"
+            ]
+        },
+        {
+            "name": "Brussel",
+            "code": "BRU",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "partying",
+                "monuments"
+            ]
+        },
+        {
+            "name": "Amsterdam",
+            "code": "AMS",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "partying",
+                "monuments"
+            ]
+        },
+        {
+            "name": "Stockholm",
+            "code": "STO",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "monuments",
+                "nature"
+            ]
+        },
+        {
+            "name": "Helsinki",
+            "code": "HEL",
+            "weather_conditions": "cool",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "monuments",
+                "nature"
+            ]
+        },
+        {
+            "name": "Roma",
+            "code": "ROM",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "low",
+            "activities": [
+                "partying",
+                "monuments",
+                "beach"
+            ]
+        },
+        {
+            "name": "Marseille",
+            "code": "MRS",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "high",
+            "activities": [
+                "partying",
+                "monuments"
+            ]
+        },
+        {
+            "name": "Athens",
+            "code": "ATH",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "low",
+            "activities": [
+                "monuments",
+                "beach"
+            ]
+        },
+        {
+            "name": "Tunis",
+            "weather_conditions": "warm",
+            "distance": "close",
+            "price_level": "low",
+            "activities": [
+                "partying",
+                "beach",
+                "monuments"
+            ]
+        },
+        {
+            "name": "Cairo",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "activities": [
+                "partying"
+            ]
+        },
+        {
+            "name": "Antalya",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "activities": [
+                "partying"
+            ]
+        },
+        {
+            "name": "Cape Town",
+            "weather_conditions": "warm",
+            "distance": "far",
+            "activities": [
+                "partying"
+            ]
+        }
+    ]
+}
