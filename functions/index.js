@@ -1,6 +1,6 @@
 "use strict";
 const functions = require("firebase-functions");
-const {dialogflow} = require("actions-on-google");
+const {dialogflow, Suggestions} = require("actions-on-google");
 const admin = require("firebase-admin");
 const app = dialogflow();
 const superagent = require("superagent");
@@ -22,17 +22,47 @@ const superagent = require("superagent");
 
 const db = admin.database();
 
-app.intent("help", (conv) => {
-    //Turn on fulfillment for intent "help" and change the text
-    conv.ask(`Here is what can I do: talk to you and move!`);
-});
+app.intent('Default Welcome Intent', conv => {
+  conv.ask(`What would you like to do during your vacation.`);
+  conv.ask(new Suggestions(['surfing',"beach","party","monuments", "golf"]));
+ });
 
-app.intent('Default Fallback Intent', conv => {
-  conv.ask(`Ups - I don't understand. What do you want me to do?`);
-});
+ app.intent("destination",
+ (
+   conv,
+   { activity, weather_condition }) => {
+    let act = activity;
+    let weather = weather_condition;
+    conv.ask(`Barcelona is greate place for ${activity}. Would you like to book a flight ticket?`);
+    return conv.ask(new Suggestions(['yes','no']));  
 
-app.intent("travel", async (conv) => {
-    var activities = "beach";
+ }
+);
+
+
+app.intent("activity",
+ (
+   conv,
+   { activity }) => {
+    conv.user.storage.activity = activity;
+    conv.ask('What weather do you prefer? Cold or warm');
+    return conv.ask(new Suggestions(['cold','warm']));  
+ }
+);
+ 
+
+app.intent("weather1",
+ (
+    conv,
+   { weather_condition }) => {
+  	conv.user.storage.weather_condition = weather_condition;
+    conv.ask(`Barcelona is great place for ${conv.user.storage.activity} in ${weather_condition} weather. Would you like to book a flight ticket?`);
+    return conv.ask(new Suggestions(['yes','no']));  
+ }
+);
+
+app.intent("weather", async (conv, {weather_condition}) => {
+    var activities = conv.user.storage.activity;
 //    var weather_condition = ["warm"];
   	var selected_cities = "";
   	var first_value = true;
